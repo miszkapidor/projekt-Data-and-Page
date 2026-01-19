@@ -1,0 +1,220 @@
+:root {
+    --bg-left: #645E9D; 
+    --bg-right: #493FA7;
+    --header-light: #E5E6EB;
+    --yellow-card: #FAC748;
+    --dark-text: #1B2021;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {font-family: 'Segoe UI', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+}
+header {
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background-color: var(--bg-right);
+    color: var(--white);
+    padding-left: 30px;
+    
+}
+
+.header-left i {
+    font-size: 2.2rem;
+    margin-right: 15px;
+    color: #00BFFF;
+    text-align: center;
+}
+
+.header-right {
+    background-color: var(--header-light);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    color: #000;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.header-right b {
+    font-weight: 700;
+}
+
+.main-wrapper {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.left-zone {
+    background-color: var(--bg-left);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.content-box{
+    width: 100%;
+    max-width: 400px;
+}
+
+.right-zone {
+    background-color: var(--bg-right);
+    color: white;
+    padding: 50px 30px;
+    width: 700px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.main-title{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.date-selector {
+        display: flex;
+        width: 100%;
+        margin-bottom: 25px;
+        height: 45px;
+    }
+
+.date-display {
+    background-color: var(--white);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-size: 1.2rem;
+    color: #333;
+    border-radius: 4px 0 0 4px;
+}
+
+.date-display span { margin-left: 30px; }
+
+.refresh-btn {
+    background-color: var(--yellow-card);
+    width: 60px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6rem;
+    color: var(--dark-text);
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.calendar-card {
+        background-color: var(--yellow-card);
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+.calendar-header-text {
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+}
+
+.white-inner-box {
+        background-color: var(--white);
+        padding: 20px 0;
+        width: 100%;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.month-name { font-size: 1.6rem; font-weight: 600; margin-bottom: 5px; }
+.day-number { font-size: 6.5rem; font-weight: 800; line-height: 1; margin: 5px 0; color: #111; }
+.day-name { font-size: 1.3rem; font-weight: 700; margin-top: 5px; }
+
+.names-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 1.4rem;
+    color: #111;
+}
+
+.names-list{
+    list-style: none;
+    text-align: left;
+}
+
+.names-list li::before{
+    content: "•";
+    margin-right: 5px;
+}
+
+table{
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.count-col{
+    background-color: #EBEBEB;
+    font-weight: bold;
+    width: 35%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-socials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-btn{
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}

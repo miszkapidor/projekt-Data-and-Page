@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dni, miesiące, lata</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <i class="fa-solid fa-hourglass-half" ></i>
+            <h1>Dni, miesiące, lata</h1>
+        </div>
+        <div class="header-right">
+            Dzisiaj jest: <b> piątek, 13/07/2018,imieniny: Andrzej, Ernest, Eugeniusz </b>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <main class="left-zone">
+            <div class="content-box">
+                <h2 class="main-title" style="font-size: 2rem;">Sprawdź kto ma imieniny!</h2>
+
+                <div class="date-selector">
+                    <div class="date-display">
+                        <span>25.03.2024</span>
+                        <i class="fa-regular fa-calendar"></i>
+                    </div>
+                    <button class="refresh-btn">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+
+                <div class="calendar-card">
+                    <div class="calendar-header-text">W dniu</div>
+                    <div class="white-inner-box">
+                        <div class="month-name">Marzec</div>
+                        <div class="day-number">25</div>
+                        <div>Poniedziałek, 2024</div>
+                    </div>
+
+                    <div class="names-section">
+                        <div >Imieniny <br>mają: </div>
+                        <ul class = "names-list">
+                            <li>Ireneusz</li>
+                            <li>Maria</li>
+                            <li>Mariola</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="right-zone">
+            <div class="helper-title">
+                Kalendarz pomocniczy <i class="fa-regular fa-calendar"></i>
+            </div>
+            <table>
+                <thead><tr>
+                    <th class="count-col">Liczba dni></th>
+                    <th>Miesiąc</th>
+                    </th>
+                </tr>
+                </thead>
+                <tbody><tr>
+                    <td rowspan="7" class="count-col">31</td>
+                    <td>Styczeń</td>
+                </tr>
+                <tr><td>Marzec</td></tr>
+                <tr><td>Maj</td></tr>
+                <tr><td>Lipiec</td></tr>
+                <tr><td>Sierpień</td></tr>
+                <tr><td>Październik</td></tr>
+                <tr><td>Grudzień</td></tr>
+
+                <tr>
+                    <td rowspan="4" class="count-col">30</td>
+                    <td>Kwiecień</td>
+                </tr>
+                <tr><td>Czerwiec</td></tr>
+                <tr><td>Wrzesień</td></tr>
+                <tr><td>Listopad</td></tr>
+
+                <tr>
+                    <td class="count-col">28 lub 29</td>
+                    <td>Luty</td> 
+                </tr>
+                </tbody>
+            </table>
+        </aside>
+    </div>
+    <footer>
+        <div> Stronę wykonał: [TWÓJ PESEL]</div>
+        <div class="footer-socials">
+            Moje media społecznościowe:
+            <a href="#" class="social-btn insta"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn linkedin"><i class="fa-brands fa-linkedin-in"></i></a>    
+            <a href="#" class="social-btn github"><i class="fa-brands fa-github"></i></a>    
+        </div>
+    </footer>
+
+
+</body>
+
+
+</html>
